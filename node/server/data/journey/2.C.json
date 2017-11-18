@@ -1,0 +1,47 @@
+{
+    "journey": {
+        "origin": "London Victoria",
+        "destination": "Brighton",
+        "scheduled": "19:50"
+    },
+    "callingPoints": [
+        {
+            "station": "London Victoria",
+            "scheduled": "19:50",
+            "expected": "19:50",
+            "actual": "19:50",
+            "platform": "2"
+        },
+        {
+            "station": "Clapham Junction",
+            "scheduled": "19:56",
+            "expected": "20:00",
+            "actual": "20:00",
+            "platform": "5"
+        },
+        {
+            "station": "East Croydon",
+            "scheduled": "20:06",
+            "expected": "20:12",
+            "platform": "1"
+        },
+        {
+            "station": "Gatwcik Airport",
+            "scheduled": "20:22",
+            "expected": "20:30",
+            "platform": "3"
+        },
+        {
+            "station": "Burgess Hill",
+            "scheduled": "20:36",
+            "expected": "20:44",
+            "platform": "7"
+        },
+        {
+            "station": "Brighton",
+            "scheduled": "20:49",
+            "expected": "20:57",
+            "platform": "1"
+        }
+    ]
+}

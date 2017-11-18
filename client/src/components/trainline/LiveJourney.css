@@ -1,0 +1,158 @@
+.LiveJourney {
+  background-color: #FFFFFF;
+  max-width: 350px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+}
+
+.LiveJourney-Icon {
+  width: 50px;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+
+.LiveJourney-Loading {
+  width: 50px;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to   {-webkit-transform: rotate(359deg);}
+}
+
+.LiveJourney-NoResults {
+  padding-left: 50px;
+}
+
+.LiveJourney-Title {
+  line-height: 1.25em;    
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+.LiveJourney-SubTitle {
+  color: #bbbbbb;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.LiveJourney-CallingPoints {
+  padding: 0;
+}
+
+.LiveJourney-CallingPoint {
+  list-style: none;
+  padding: .25em 0;
+  min-height: 3.5em;
+  position: relative;
+}
+
+.LiveJourney-CallingPointTime {
+  margin-right: 1em;
+  float: left;
+  display: inline-block;
+}
+
+.LiveJourney-CallingPointExpectedTime {
+  color: #FF0000;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 4px;
+}
+
+.LiveJourney-CallingPointStation {
+  position: relative;
+  margin-left: 5em;
+}
+
+.LiveJourney-CallingPointStation:before {
+  position: absolute;
+  left: -18px;
+  top: -50px;
+  bottom: 15px;
+  content: " ";
+  display: block;
+  width: 2px;
+  background: #cac8c9;
+  background-size: 2px;
+  z-index: 1;
+}
+
+.LiveJourney-CallingPoint:first-child .LiveJourney-CallingPointStation:before  {
+  top: .5em;
+}
+
+.LiveJourney-CallingPointName:before {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 50%;
+  content: " ";
+  height: 16px;
+  left: -25px;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  z-index: 3;
+}
+
+.actual .LiveJourney-CallingPointName:before {
+  background: #999;
+}
+
+.LiveJourney-CallingPointDue {
+  float: left;
+  color: #999999;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.LiveJourney-CallingPointPlatform {
+  float: right;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.actual {
+  color: #999999 !important;
+}
+
+.departed {
+  color: #999999 !important;
+}
+
+.late {
+  color: #FF0000;
+}
+
+.LiveJourney-CallingPoint-LiveTrain {
+  width: 24px;
+  position: absolute;
+  left: -29px;
+  top: -30px;
+  z-index: 10;
+}
+
+.LiveJourney-CallingPoint-LiveTrain.origin {
+  width: 24px;
+  position: absolute;
+  left: -29px;
+  top: 0px;
+  z-index: 10;
+}
+
+.LiveJourney-CallingPoint-LiveTrain.destination {
+  width: 24px;
+  position: absolute;
+  left: -29px;
+  top: 0px;
+  z-index: 10;
+}
